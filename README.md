@@ -16,10 +16,10 @@ the logic should be server side.  Some of the customizable configurations are
 as follows:
 
  * Can use the filter with an OR or AND match.  
-     orMatch false
+     <pre>orMatch: false</pre>
  * Configurable filter for testing against. 
-     filterTest: function(combo,str,regex,rec) {
+     <pre>filterTest: function(combo,str,regex,rec) {
         return regex.test(rec.data[combo.displayField]);
-     }
+    }</pre>
  * Default characters to escape so the regex doesn't get killed: 
-     regexReplaceChar: /([\\(){}\[\]])/g
+     <pre>regexReplaceChar: /([\\(){}\[\]])/g</pre>
