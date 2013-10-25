@@ -8,6 +8,7 @@ This only works with ext-4.2.1 and above.  ext-4.2.0 has a completely different 
 ## To Do List
 
  1. Add better support for color based on filterTest
+ 2. Add soundex support possibly
 
 ## Note
 
