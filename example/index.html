@@ -22,55 +22,60 @@ Ext.Loader.setConfig({
 Ext.onReady(function() {
     Ext.tip.QuickTipManager.init();
     
+    var data = [
+        { airport: "Aberdeen, SD", code: "ABR" },
+        { airport: "Abilene, TX", code: "ABI" },
+        { airport: "Adak Island, AK", code: "ADK" },
+        { airport: "Akiachak, AK", code: "KKI" },
+        { airport: "Akiak, AK", code: "AKI" },
+        { airport: "Akron/Canton, OH", code: "CAK" },
+        { airport: "Akuton, AK", code: "KQA" },
+        { airport: "Alakanuk, AK", code: "AUK" },
+        { airport: "Alamogordo, NM", code: "ALM" },
+        { airport: "Alamosa, CO", code: "ALS" },
+        { airport: "Albany, NY", code: "ALB" },
+        { airport: "BAlbany, OR - Bus service", code: "CVO" },
+        { airport: "Albany, OR - Bus service", code: "QWY" },
+        { airport: "Albuquerque, NM", code: "ABQ" },
+        { airport: "Aleknagik, AK", code: "WKK" },
+        { airport: "Alexandria, LA", code: "AEX" },
+        { airport: "Allakaket, AK", code: "AET" },
+        { airport: "Allentown, PA", code: "ABE" },
+        { airport: "Alliance, NE", code: "AIA" },
+        { airport: "Alpena, MI", code: "APN" },
+        { airport: "Altoona, PA", code: "AOO" },
+        { airport: "Amarillo, TX", code: "AMA" },
+        { airport: "Ambler, AK", code: "ABL" },
+        { airport: "Anaktueuk, AK", code: "AKP" },
+        { airport: "Anchorage, AK", code: "ANC" },
+        { airport: "Angoon, AK", code: "AGN" },
+        { airport: "Aniak, AK", code: "ANI" },
+        { airport: "Anvik, AK", code: "ANV" },
+        { airport: "Appleton, WI", code: "ATW" },
+        { airport: "Arcata, CA", code: "ACV" },
+        { airport: "Arctic Village, AK", code: "ARC" },
+        { airport: "Asheville, NC", code: "AVL" },
+        { airport: "Ashland, KY/Huntington, WV", code: "HTS" },
+        { airport: "Aspen, CO", code: "ASE" },
+        { airport: "Athens, GA", code: "AHN" },
+        { airport: "Atka, AK", code: "AKB" },
+        { airport: "Atlanta, GA", code: "ATL" },
+        { airport: "Atlantic City, NJ", code: "AIY" },
+        { airport: "Atqasuk, AK", code: "ATK" },
+        { airport: "Augusta, GA", code: "AGS" },
+        { airport: "Augusta, ME", code: "AUG" },
+        { airport: "Austin, TX", code: "AUS" }
+    ];
+    
     var airports = Ext.create('Ext.data.Store', {
         fields: ['airport', 'code'], 
-        data: [
-          { airport: "Aberdeen, SD", code: "ABR" },
-          { airport: "Abilene, TX", code: "ABI" },
-          { airport: "Adak Island, AK", code: "ADK" },
-          { airport: "Akiachak, AK", code: "KKI" },
-          { airport: "Akiak, AK", code: "AKI" },
-          { airport: "Akron/Canton, OH", code: "CAK" },
-          { airport: "Akuton, AK", code: "KQA" },
-          { airport: "Alakanuk, AK", code: "AUK" },
-          { airport: "Alamogordo, NM", code: "ALM" },
-          { airport: "Alamosa, CO", code: "ALS" },
-          { airport: "Albany, NY", code: "ALB" },
-          { airport: "BAlbany, OR - Bus service", code: "CVO" },
-          { airport: "Albany, OR - Bus service", code: "QWY" },
-          { airport: "Albuquerque, NM", code: "ABQ" },
-          { airport: "Aleknagik, AK", code: "WKK" },
-          { airport: "Alexandria, LA", code: "AEX" },
-          { airport: "Allakaket, AK", code: "AET" },
-          { airport: "Allentown, PA", code: "ABE" },
-          { airport: "Alliance, NE", code: "AIA" },
-          { airport: "Alpena, MI", code: "APN" },
-          { airport: "Altoona, PA", code: "AOO" },
-          { airport: "Amarillo, TX", code: "AMA" },
-          { airport: "Ambler, AK", code: "ABL" },
-          { airport: "Anaktueuk, AK", code: "AKP" },
-          { airport: "Anchorage, AK", code: "ANC" },
-          { airport: "Angoon, AK", code: "AGN" },
-          { airport: "Aniak, AK", code: "ANI" },
-          { airport: "Anvik, AK", code: "ANV" },
-          { airport: "Appleton, WI", code: "ATW" },
-          { airport: "Arcata, CA", code: "ACV" },
-          { airport: "Arctic Village, AK", code: "ARC" },
-          { airport: "Asheville, NC", code: "AVL" },
-          { airport: "Ashland, KY/Huntington, WV", code: "HTS" },
-          { airport: "Aspen, CO", code: "ASE" },
-          { airport: "Athens, GA", code: "AHN" },
-          { airport: "Atka, AK", code: "AKB" },
-          { airport: "Atlanta, GA", code: "ATL" },
-          { airport: "Atlantic City, NJ", code: "AIY" },
-          { airport: "Atqasuk, AK", code: "ATK" },
-          { airport: "Augusta, GA", code: "AGS" },
-          { airport: "Augusta, ME", code: "AUG" },
-          { airport: "Austin, TX", code: "AUS" }
-        ]
+        data: data
     });
     
-    var airports2 = Ext.clone(airports);
+    var airports2 = Ext.create('Ext.data.Store', {
+        fields: ['airport', 'code'], 
+        data: data
+    });
     
     Ext.create('Ext.panel.Panel', {
         renderTo: Ext.getBody(),
