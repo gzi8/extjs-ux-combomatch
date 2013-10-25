@@ -2,6 +2,9 @@
 ComboMatch is used for any combobox and provides support for matching multiple strings typed in the
 input.
 
+## ExtJS Version
+This only works with ext-4.2.1 and above.  ext-4.2.0 has a completely different structure under doQuery.
+
 ## To Do List
 
  1. Add better support for color based on filterTest
