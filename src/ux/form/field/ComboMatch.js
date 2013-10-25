@@ -122,7 +122,7 @@ Ext.define('Ext.ux.form.field.ComboMatch', {
                         if (typeof b != 'string') {
                             return data[me.displayField];
                         }
-                        return '<span class="'+Ext.baseCSSPrefix+'ux-combomatch">' + b + '</span>';
+                        return '<span class="'+Ext.baseCSSPrefix+'ux-combomatch match">' + b + '</span>';
                     });
                 }
             }
