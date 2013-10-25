@@ -70,6 +70,8 @@ Ext.onReady(function() {
         ]
     });
     
+    var airports2 = Ext.clone(airports);
+    
     Ext.create('Ext.panel.Panel', {
         renderTo: Ext.getBody(),
         width: 500,
@@ -87,7 +89,7 @@ Ext.onReady(function() {
             fieldLabel: 'Airport (with code search)',
             store: airports,
             queryMode: 'local',
-            displayField: 'airport',
+            displayField: 'airport2',
             valueField: 'code',
             filterTest: function(combo,str,regex,rec) {
                 return str.toUpperCase() === rec.get('code') || 
