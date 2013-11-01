@@ -10,6 +10,10 @@ Forum: http://www.sencha.com/forum/showthread.php?274695-Ext.ux.form.field.Combo
 ## ExtJS Version
 This only works with ext-4.2.1 and above.  ext-4.2.0 has a completely different structure under doQuery.
 
+## Bugs
+
+ 1. If only one value select it when tab out.  Happens when typing an extra field that isn't in the displayField
+
 ## To Do List
 
  1. Add better support for color based on filterTest
