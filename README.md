@@ -2,6 +2,7 @@
 ComboMatch is used for any combobox and provides support for matching multiple strings typed in the
 input.
 
+Demo: http://htmlpreview.github.io/?https://github.com/theonlytad/extjs-ux-combomatch/blob/master/example/index.html
 Forum: http://www.sencha.com/forum/showthread.php?274695-Ext.ux.form.field.ComboMatch
 
 
